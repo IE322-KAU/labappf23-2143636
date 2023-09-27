@@ -83,7 +83,8 @@ namespace W4C2._1_WINDOWS_FORM
 
         private void button12_Click(object sender, EventArgs e)
         {
-
+            FRMPICTURE frm = new FRMPICTURE();
+            frm.ShowDialog();
         }
 
         private void button14_Click(object sender, EventArgs e)
