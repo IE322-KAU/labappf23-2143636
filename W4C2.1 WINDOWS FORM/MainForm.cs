@@ -144,5 +144,11 @@ namespace W4C2._1_WINDOWS_FORM
             FRMCombo frm = new FRMCombo();
             frm.ShowDialog();
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            FrmRandom frm = new FrmRandom();
+            frm.ShowDialog();
+        }
     }
 }

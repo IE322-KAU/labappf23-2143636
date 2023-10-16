@@ -67,12 +67,30 @@ namespace W4C2._1_WINDOWS_FORM
 
         private void BtnRemoveLast_Click(object sender, EventArgs e)
         {
-            CmbDays.Items.RemoveAt(CmbDays.TabIndex);
+            if (CmbDays.Items.Count >= 1)
+            {
+                CmbDays.Items.RemoveAt(CmbDays.Items.Count - 1);
+            }
+            else
+            {
+                MessageBox.Show("Can't remove last item");
+
+            }
+            MessageBox.Show("current number of items" + CmbDays.Items.Count);
         }
 
         private void BtnRemove2ndLast_Click(object sender, EventArgs e)
         {
-            CmbDays.Items.RemoveAt(CmbDays.TabIndex - 1);
+            if (CmbDays.Items.Count >= 2)
+            {
+                CmbDays.Items.RemoveAt(CmbDays.Items.Count - 2);
+            }
+            else
+            {
+                MessageBox.Show("Can't remove last item");
+
+            }
+            MessageBox.Show("current number of items" + CmbDays.Items.Count);
         }
     }
 }

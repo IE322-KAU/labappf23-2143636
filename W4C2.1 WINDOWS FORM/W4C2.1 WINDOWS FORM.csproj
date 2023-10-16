@@ -52,6 +52,13 @@
     <Compile Include="Combo.Designer.cs">
       <DependentUpon>Combo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Random.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>Random.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Picture Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Combo.resx">
       <DependentUpon>Combo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Random.resx">
+      <DependentUpon>Random.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Picture Form.resx">
       <DependentUpon>Picture Form.cs</DependentUpon>
