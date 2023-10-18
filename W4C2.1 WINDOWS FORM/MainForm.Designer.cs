@@ -452,7 +452,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(128, 36);
             this.button16.TabIndex = 10;
-            this.button16.Text = "Random";
+            this.button16.Text = "RandomCombo";
             this.button16.UseVisualStyleBackColor = true;
             // 
             // button17

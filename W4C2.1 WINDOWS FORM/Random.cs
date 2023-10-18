@@ -18,6 +18,7 @@ namespace W4C2._1_WINDOWS_FORM
         public FrmRandom()
         {
             InitializeComponent();
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -52,6 +53,24 @@ namespace W4C2._1_WINDOWS_FORM
             BtnGenerateRandom.BackColor = Color.FromArgb(r,g,b);
             this.BackColor = Color.FromArgb(255 - r,255 - g,255 - b );
             LblRGB.Text = Convert.ToString(r) + "-" + Convert.ToString(g) + "-" + Convert.ToString(b);
+        }
+
+       
+
+        private void BtnSeed_Click_1(object sender, EventArgs e)
+        {
+            int i;
+            Random Rnd1 = new Random(90);
+            for (i = 0; i < 5; i++)
+            {
+                cmbRnd1.Items.Add(Rnd1.Next());
+            }
+            int j;
+            Random Rnd2 = new Random(90);
+            for (j = 0; j < 5; j++)
+            {
+                cmbRnd2.Items.Add(Rnd1.Next());
+            }
         }
     }
 }

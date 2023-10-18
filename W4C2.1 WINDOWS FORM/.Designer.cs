@@ -47,6 +47,7 @@
             this.BtnSeed.TabIndex = 0;
             this.BtnSeed.Text = "Seed";
             this.BtnSeed.UseVisualStyleBackColor = true;
+            this.BtnSeed.Click += new System.EventHandler(this.BtnSeed_Click_1);
             // 
             // BtnGenerateRandom
             // 
